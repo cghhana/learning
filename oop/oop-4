@@ -1,0 +1,11 @@
+class Person2():
+    def AgeGet(self):
+        return self._age
+    def AgeSet(self,age):
+        self._age = age.int()
+    def AgeDel(self):
+        self.name = 'NoAge'
+p2 = Person2()
+print('请输入年龄：', end = ' ')
+p2.age = int(input())
+print(p2.age)
